@@ -17,7 +17,7 @@ public class TextureCreatorInspector : Editor {
 
 	void RefreshCreator () {
 		if (Application.isPlaying) {
-			creator.FillTexture();
+			//creator.FillTexture();
 		}
 	}
 
@@ -28,7 +28,7 @@ public class TextureCreatorInspector : Editor {
 			RefreshCreator();
 		}
 		if (GUILayout.Button("Fill Texture")) {
-			creator.FillTexture();
+			//creator.FillTexture();
 		}
 	}
 }
