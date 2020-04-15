@@ -10,7 +10,7 @@ public class StateControllerEditor : Editor {
  	public override void OnInspectorGUI() {
 
 		StateController controller = (StateController)target;
-		State currentState = controller.currentState;
+ 		State currentState = controller.currentState;
 
 		
 		serializedObject.Update();
@@ -29,20 +29,14 @@ public class StateControllerEditor : Editor {
 			SerializedProperty archiveActions = stateSO.FindProperty("archiveActions");
 			
 			EditorArray.ShowActions(actions, logActions, archiveActions, controller, EditorArrayOption.NoElementLabels);
-/* 
-			Playbook playbook = Selection.activeGameObject.GetComponent <Playbook>();
-			SerializedObject playbookSO = new SerializedObject(playbook);
-			if (playbookSO != null) {
-				//SerializedProperty playbooks = playbookSO.FindProperty("playbooks");
-				EditorArray.ShowPlaybooks(playbookSO, playbook);
-			} */
+
 		}
 
 		EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
 
 		EditorGUILayout.PropertyField(serializedObject.FindProperty("debugMode"));
 
-		serializedObject.ApplyModifiedProperties();
+		serializedObject.ApplyModifiedProperties(); 
 
 	}
 

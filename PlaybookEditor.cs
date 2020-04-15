@@ -7,11 +7,11 @@ public class PlaybookEditor : Editor {
 
 
     public override void OnInspectorGUI () {
-        DrawDefaultInspector();
+/*         DrawDefaultInspector();
         if (GUILayout.Button("Play")) {
             Playbook pb = target as Playbook;
             pb.Play();
         }
-        
+         */
     }
 }

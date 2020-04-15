@@ -1,10 +1,10 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(TextureCreator))]
+//[CustomEditor(typeof(TextureCreator))]
 public class TextureCreatorInspector : Editor {
 
-    TextureCreator creator;
+/*     TextureCreator creator;
 
 	void OnEnable () {
 		creator = target as TextureCreator;
@@ -30,5 +30,5 @@ public class TextureCreatorInspector : Editor {
 		if (GUILayout.Button("Fill Texture")) {
 			//creator.FillTexture();
 		}
-	}
+	} */
 }
